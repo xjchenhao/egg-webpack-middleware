@@ -43,9 +43,10 @@ exports.webpackMiddleware = {
 ## Configuration
 
 ```js
-// {app_root}/config/config.default.js
-exports.webpackMiddleware = {
-};
+// {app_root}/config/config.local.js
+let devConfig = require('./../config/webpack.config');  //webpack配置
+
+exports.webpackMiddleware = devConfig;
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
