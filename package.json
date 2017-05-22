@@ -3,14 +3,29 @@
   "version": "1.0.0",
   "description": "webpack dev&hot middleware for egg",
   "eggPlugin": {
-    "name": "webpackMiddleware"
+    "name": "webpackMiddleware",
+    "dependencies": [
+      "koa-webpack-dev-middleware",
+      "koa-webpack-hot-middleware",
+      "webpack"
+    ],
+    "env": [
+      "local"
+    ]
   },
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "webpack",
+    "webpack-plugin",
+    "webpack-middleware"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "koa-webpack-dev-middleware": "^1.4.6",
+    "koa-webpack-hot-middleware": "^1.0.3",
+    "webpack": "^2.5.1"
+  },
   "devDependencies": {
     "autod": "^2.8.0",
     "egg": "^1.2.1",
